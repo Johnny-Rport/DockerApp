@@ -2,6 +2,6 @@
 # This enables xhost then runs appropiate docker file using compose then shuts it down
 
 xhost +local:docker
-sudo docker compose -f ./scripts/compose.yaml up
+sudo docker compose -f ./compose.yaml up
 xhost -local:docker
 
