@@ -1,0 +1,14 @@
+# Specify Image
+# The -e var for $DISPLAY
+# The -v for socket volume
+# The command xhost +local:docker
+# Command within docker container for ./algoVisual
+
+services:
+  Algovisual:
+    image: algovisual
+    command: /algoVisualizer/algoVisual
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
