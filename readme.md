@@ -20,5 +20,10 @@ I'll add how to compile it manually on Linux with SFML including a makefile for 
   * /etc/ld.so.conf is permanent and much more stable
     -  On docker, we'll be using /etc/ld.so.conf
 
+## How to use Docker
+- Use the following to get the image of containerized app: `docker pull dankjoker/algovisualizer:1`
+- Using the appropiate Docker compose command this will launch the image within a container
+- Using the Bash Script allows local X11 fowarding, Launches the Container, when the user leaves the container it automatically disables the local X11 fowarding permission
+
 
 ###
